@@ -1,0 +1,18 @@
+﻿<Window x:Class="Poker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Poker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal" Height="35" VerticalAlignment="Top">
+            <Button x:Name="hostBtn" Content="Host" MinWidth="100" Margin="10,0,0,0" Click="hostBtn_Click"/>
+            <Button x:Name="clientBtn" Content="Client" MinWidth="100" Margin="10,0,0,0" Click="clientBtn_Click"/>
+            <Label x:Name="idLb" Content="Please enter your ID"/>
+            <TextBox x:Name="idTbx" TextWrapping="Wrap" Text="" Width="120"/>
+        </StackPanel>
+        <Frame x:Name="Main" Margin="0,35,0,0" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
